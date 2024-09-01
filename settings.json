@@ -1,4 +1,5 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": 
     [
@@ -11,12 +12,12 @@
             "keys": "ctrl+c"
         },
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
             "command": "paste",
             "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -30,51 +31,59 @@
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+    "defaultProfile": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": 
         {
-            "acrylicOpacity": 0.75,
-            // "acrylicOpacity": 1.0,
+            "adjustIndistinguishableColors": "never",
             "colorScheme": "nord",
+            "experimental.retroTerminalEffect": false,
+            "font": 
+            {
+                "face": "Bizin Gothic NF"
+            },
+            "opacity": 90,
+            "suppressApplicationTitle": true,
             "unfocusedAppearance": {},
-            "useAcrylic": true,
-            // "fontFace": "Cascadia Mono" // default
-            "fontFace": "HackGenNerd Console"
-            // "fontSize": 12 // default,
-
-            // "fontFace": "HackGen35Nerd Console",
-            // "fontSize": 11 // for HackGen35Nerd Console
+            "useAcrylic": true
         },
         "list": 
         [
             {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
                 "hidden": false,
                 "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl",
-                "suppressApplicationTitle": true,
-                "tabTitle": "Ubuntu"
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             },
             {
-                "commandline": "C:/Program Files/Git/bin/bash.exe --login",
-                "guid": "{834d69fb-77cf-43e9-be53-4081040e7217}",
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": true,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
+                "guid": "{d66c222a-9aa9-4c36-9f96-9b7edd46973c}",
                 "hidden": false,
-                "icon": "%PROGRAMFILES%/Git/mingw64/share/git/git-for-windows.ico",
-                "name": "Git Bash",
-                "startingDirectory": "%USERPROFILE%",
-                "suppressApplicationTitle": true,
-                "tabTitle": "Git Bash"
+                "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
+                "name": "Git bash",
+                "startingDirectory": "%USERPROFILE%"
             },
             {
-                "commandline": "cmd.exe",
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "cmd"
             },
             {
-                "commandline": "powershell.exe",
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
@@ -177,32 +186,9 @@
             "name": "One Half Light",
             "purple": "#A626A4",
             "red": "#E45649",
-            "selectionBackground": "#FFFFFF",
+            "selectionBackground": "#4F525D",
             "white": "#FAFAFA",
             "yellow": "#C18301"
-        },
-        {
-            "background": "#1E2127",
-            "black": "#1E2127",
-            "blue": "#61AFEF",
-            "brightBlack": "#5C6370",
-            "brightBlue": "#61AFEF",
-            "brightCyan": "#56B6C2",
-            "brightGreen": "#98C379",
-            "brightPurple": "#C678DD",
-            "brightRed": "#E06C75",
-            "brightWhite": "#FFFFFF",
-            "brightYellow": "#D19A66",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#56B6C2",
-            "foreground": "#ABB2BF",
-            "green": "#98C379",
-            "name": "OneDark",
-            "purple": "#C678DD",
-            "red": "#E06C75",
-            "selectionBackground": "#FFFFFF",
-            "white": "#ABB2BF",
-            "yellow": "#D19A66"
         },
         {
             "background": "#002B36",
@@ -246,7 +232,7 @@
             "name": "Solarized Light",
             "purple": "#D33682",
             "red": "#DC322F",
-            "selectionBackground": "#FFFFFF",
+            "selectionBackground": "#073642",
             "white": "#EEE8D5",
             "yellow": "#B58900"
         },
@@ -292,9 +278,32 @@
             "name": "Tango Light",
             "purple": "#75507B",
             "red": "#CC0000",
-            "selectionBackground": "#FFFFFF",
+            "selectionBackground": "#555753",
             "white": "#D3D7CF",
             "yellow": "#C4A000"
+        },
+        {
+            "background": "#300A24",
+            "black": "#171421",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#08458F",
+            "brightCyan": "#2C9FB3",
+            "brightGreen": "#26A269",
+            "brightPurple": "#A347BA",
+            "brightRed": "#C01C28",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#A2734C",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#26A269",
+            "name": "Ubuntu-ColorScheme",
+            "purple": "#881798",
+            "red": "#C21A23",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#A2734C"
         },
         {
             "background": "#000000",
@@ -343,28 +352,30 @@
             "yellow": "#E2A478"
         },
         {
+            "background": "#2E3440",
+            "black": "#3B4252",
+            "blue": "#81A1C1",
+            "brightBlack": "#4C566A",
+            "brightBlue": "#81A1C1",
+            "brightCyan": "#8FBCBB",
+            "brightGreen": "#A3BE8C",
+            "brightPurple": "#B48EAD",
+            "brightRed": "#BF616A",
+            "brightWhite": "#ECEFF4",
+            "brightYellow": "#EBCB8B",
+            "cursorColor": "#ECEFF4",
+            "cyan": "#88C0D0",
+            "foreground": "#D8DEE9",
+            "green": "#A3BE8C",
             "name": "nord",
-            "black": "#3b4252",
-            "red": "#bf616a",
-            "green": "#a3be8c",
-            "yellow": "#ebcb8b",
-            "blue": "#81a1c1",
-            "purple": "#b48ead",
-            "cyan": "#88c0d0",
-            "white": "#e5e9f0",
-            "brightBlack": "#4c566a",
-            "brightRed": "#bf616a",
-            "brightGreen": "#a3be8c",
-            "brightYellow": "#ebcb8b",
-            "brightBlue": "#81a1c1",
-            "brightPurple": "#b48ead",
-            "brightCyan": "#8fbcbb",
-            "brightWhite": "#eceff4",
-            "background": "#2e3440",
-            "foreground": "#d8dee9",
-            "selectionBackground": "#eceff4",
-            "cursorColor": "#eceff4"
-          }
+            "purple": "#B48EAD",
+            "red": "#BF616A",
+            "selectionBackground": "#ECEFF4",
+            "white": "#E5E9F0",
+            "yellow": "#EBCB8B"
+        }
     ],
-    "startOnUserLogin": true
+    "tabWidthMode": "equal",
+    "themes": [],
+    "useAcrylicInTabRow": true
 }
